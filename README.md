@@ -1,6 +1,6 @@
-# Frontend Interview Prep
+# Dojo
 
-[GreatFrontEnd](https://www.greatfrontend.com) 문제를 매일 하나씩 풀며 정리하는 저장소입니다.
+매일 한 문제씩 풀며 기본기를 다지는 저장소입니다. 문제는 [GreatFrontEnd](https://www.greatfrontend.com)에서 가져옵니다.
 
 ## Structure
 

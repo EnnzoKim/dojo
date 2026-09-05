@@ -1,6 +1,5 @@
 # {{TITLE}}
 
-- **Source**: https://www.greatfrontend.com/questions/system-design/{{NAME}}
 - **Date**: {{DATE}}
 
 ## Requirements

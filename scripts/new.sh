@@ -21,21 +21,12 @@ CAMEL="$(echo "$NAME" | awk -F- '{ s=$1; for(i=2;i<=NF;i++) s=s toupper(substr($
 PASCAL="$(echo "$NAME" | awk -F- '{ s=""; for(i=1;i<=NF;i++) s=s toupper(substr($i,1,1)) substr($i,2); print s }')"
 TITLE="$(echo "$NAME" | awk -F- '{ s=""; for(i=1;i<=NF;i++) s=s (i>1?" ":"") toupper(substr($i,1,1)) substr($i,2); print s }')"
 
-case "$CATEGORY" in
-  javascript|algo) CATEGORY_PATH="javascript" ;;
-  ui) CATEGORY_PATH="user-interface" ;;
-  quiz) CATEGORY_PATH="quiz" ;;
-  system-design) CATEGORY_PATH="system-design" ;;
-  *) echo "Unknown category: $CATEGORY" >&2; exit 1 ;;
-esac
-
 render() {
   sed -e "s/{{NAME}}/$NAME/g" \
       -e "s/{{FN}}/$CAMEL/g" \
       -e "s/{{COMPONENT}}/$PASCAL/g" \
       -e "s/{{TITLE}}/$TITLE/g" \
       -e "s/{{CATEGORY}}/$CATEGORY/g" \
-      -e "s/{{CATEGORY_PATH}}/$CATEGORY_PATH/g" \
       -e "s/{{DATE}}/$DATE/g" \
       "$1" > "$2"
 }
@@ -64,5 +55,9 @@ case "$CATEGORY" in
     render "$TPL/javascript.ts" "$DIR/$NAME.ts"
     render "$TPL/javascript.test.ts" "$DIR/$NAME.test.ts"
     echo "Created $DIR"
+    ;;
+  *)
+    echo "Unknown category: $CATEGORY" >&2
+    exit 1
     ;;
 esac

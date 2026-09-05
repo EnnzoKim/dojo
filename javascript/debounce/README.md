@@ -2,7 +2,6 @@
 
 - **Category**: javascript
 - **Difficulty**: Medium
-- **Source**: https://www.greatfrontend.com/questions/javascript/debounce
 - **Date**: 2026-09-05
 
 ## Problem
@@ -75,11 +74,6 @@ Time O(1) per call, space O(1).
 - 클로저: 함수가 자기가 만들어진 환경의 변수를 붙들고 있는 것. 공장(`debounce`)과
   제품(반환 함수) 비유.
 - `this` 결정 규칙 4가지: 점 호출, 일반 호출, `call/apply/bind`, 화살표 함수.
-
-## Notes
-
-- Tests use `@sinonjs/fake-timers` (same as GreatFrontEnd) so their test files
-  can be pasted as-is.
 
 ## Follow-ups
 

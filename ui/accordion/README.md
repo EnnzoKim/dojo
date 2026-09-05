@@ -2,7 +2,6 @@
 
 - **Category**: ui
 - **Difficulty**: Easy
-- **Source**: https://www.greatfrontend.com/questions/user-interface/accordion
 - **Date**: 2026-09-05
 
 ## Problem

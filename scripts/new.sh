@@ -43,8 +43,8 @@ case "$CATEGORY" in
     [[ -e "$DIR" ]] && { echo "Already exists: $DIR" >&2; exit 1; }
     mkdir -p "$DIR"
     render "$TPL/README.md" "$DIR/README.md"
-    render "$TPL/ui.tsx" "$DIR/$PASCAL.tsx"
-    render "$TPL/ui.test.tsx" "$DIR/$PASCAL.test.tsx"
+    render "$TPL/ui.jsx" "$DIR/$PASCAL.jsx"
+    render "$TPL/ui.test.jsx" "$DIR/$PASCAL.test.jsx"
     echo "Created $DIR"
     ;;
   javascript|algo)
@@ -52,8 +52,8 @@ case "$CATEGORY" in
     [[ -e "$DIR" ]] && { echo "Already exists: $DIR" >&2; exit 1; }
     mkdir -p "$DIR"
     render "$TPL/README.md" "$DIR/README.md"
-    render "$TPL/javascript.ts" "$DIR/$NAME.ts"
-    render "$TPL/javascript.test.ts" "$DIR/$NAME.test.ts"
+    render "$TPL/javascript.js" "$DIR/$NAME.js"
+    render "$TPL/javascript.test.js" "$DIR/$NAME.test.js"
     echo "Created $DIR"
     ;;
   *)

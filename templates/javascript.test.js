@@ -1,7 +1,7 @@
 import {{FN}} from './{{NAME}}';
 
 describe('{{FN}}', () => {
-  it('works', () => {
+  test('works', () => {
     expect({{FN}}).toBeDefined();
   });
 });

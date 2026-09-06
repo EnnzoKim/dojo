@@ -2,7 +2,7 @@ import FakeTimers from '@sinonjs/fake-timers';
 
 import debounce from './debounce';
 
-let clock: FakeTimers.InstalledClock;
+let clock;
 
 describe('debounce', () => {
   beforeEach(() => {
@@ -50,8 +50,8 @@ describe('debounce', () => {
   });
 
   test('uses the latest arguments', () => {
-    const calls: number[] = [];
-    const push = debounce((n: number) => {
+    const calls = [];
+    const push = debounce((n) => {
       calls.push(n);
     }, 10);
 
@@ -63,10 +63,10 @@ describe('debounce', () => {
   });
 
   test('preserves this from the most recent call', () => {
-    const results: number[] = [];
+    const results = [];
     const obj = {
       value: 42,
-      record: debounce(function (this: { value: number }) {
+      record: debounce(function () {
         results.push(this.value);
       }, 10),
     };

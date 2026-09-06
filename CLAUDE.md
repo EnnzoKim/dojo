@@ -21,12 +21,13 @@ Create a problem with `npm run new -- <category> <kebab-name>`. Never create the
 npm test                   # all tests
 npm test -- <name>         # one problem
 npm run test:watch -- <name>
-npm run typecheck
 npm run lint
 npm run format
 ```
 
-Tests use `@sinonjs/fake-timers` (pinned to v14) so GreatFrontEnd test files can be pasted verbatim.
+Plain JavaScript only (no TypeScript). Keep the JSDoc `@param` / `@returns` block on
+solution functions. Tests use `@sinonjs/fake-timers` (pinned to v14) so GreatFrontEnd
+test files can be pasted verbatim.
 
 ## Problem README format
 
@@ -80,5 +81,5 @@ the correct mental model is.
 
 - One problem per commit, message `feat(<category>): <name>`.
 - Use `docs(...)` for README-only changes and `chore: ...` for tooling.
-- Run `npm test`, `npm run typecheck`, and `npm run lint` before committing.
+- Run `npm test` and `npm run lint` before committing.
 - Push to `origin main` after each commit unless told otherwise.

@@ -7,9 +7,9 @@ one commit per problem.
 
 | Folder           | Unit        | Files                                                  |
 | ---------------- | ----------- | ------------------------------------------------------ |
-| `javascript/`    | `<name>/`   | `README.md`, `<name>.ts`, `<name>.test.ts`             |
-| `algo/`          | `<name>/`   | `README.md`, `<name>.ts`, `<name>.test.ts`             |
-| `ui/`            | `<name>/`   | `README.md`, `<Component>.tsx`, `<Component>.test.tsx` |
+| `javascript/`    | `<name>/`   | `README.md`, `<name>.js`, `<name>.test.js`             |
+| `algo/`          | `<name>/`   | `README.md`, `<name>.js`, `<name>.test.js`             |
+| `ui/`            | `<name>/`   | `README.md`, `<Component>.jsx`, `<Component>.test.jsx` |
 | `quiz/`          | `<name>.md` | single markdown file                                   |
 | `system-design/` | `<name>.md` | single markdown file                                   |
 

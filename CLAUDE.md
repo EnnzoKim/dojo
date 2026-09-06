@@ -54,9 +54,11 @@ How the solution works, in a few bullets. End with time and space complexity.
 ## Retrospective
 
 **막힌 지점**: numbered list of what I got stuck on, what I wrongly assumed, and what
-the correct mental model is.
+the correct mental model is. Generalize each item so it still makes sense without
+remembering this problem: describe the pattern or concept, not the variable names or
+the specific function. Keep each item to two or three lines.
 
-**다시 볼 것**: concepts to review later.
+**다시 볼 것**: concepts to review later, one line each.
 
 ## Follow-ups
 
@@ -65,7 +67,8 @@ the correct mental model is.
 
 - Problem section: English.
 - Approach and Retrospective: Korean is fine.
-- Retrospective must be based on what actually happened while solving, not generic notes.
+- Retrospective must be based on what actually happened while solving, but written as
+  reusable lessons, not a play-by-play of this problem. Compact over complete.
 
 ## How to work with me
 

@@ -32,14 +32,14 @@ test files can be pasted verbatim.
 ## Problem README format
 
 Every problem README must follow exactly this structure, in this order. Do not add,
-remove, or rename sections. Do not include a "Source" line or any link to where the
-problem came from.
+remove, or rename sections. Do not include a "Source" line, a "Difficulty" line, or any
+link to where the problem came from. The header has exactly two metadata lines:
+Category and Date.
 
 ```markdown
 # <Title>
 
 - **Category**: <javascript | ui | algo | quiz | system-design>
-- **Difficulty**: <Easy | Medium | Hard>
 - **Date**: <YYYY-MM-DD>
 
 ## Problem

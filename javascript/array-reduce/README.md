@@ -1,7 +1,6 @@
 # Array Reduce
 
 - **Category**: javascript
-- **Difficulty**: Easy
 - **Date**: 2026-09-06
 
 ## Problem

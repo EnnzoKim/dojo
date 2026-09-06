@@ -1,7 +1,6 @@
 # {{TITLE}}
 
 - **Category**: {{CATEGORY}}
-- **Difficulty**:
 - **Date**: {{DATE}}
 
 ## Problem

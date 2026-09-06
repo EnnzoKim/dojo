@@ -1,7 +1,6 @@
 # Accordion
 
 - **Category**: ui
-- **Difficulty**: Easy
 - **Date**: 2026-09-05
 
 ## Problem

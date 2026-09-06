@@ -1,7 +1,6 @@
 # Debounce
 
 - **Category**: javascript
-- **Difficulty**: Medium
 - **Date**: 2026-09-05
 
 ## Problem
